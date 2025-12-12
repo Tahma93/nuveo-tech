@@ -14,23 +14,30 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere vitae sint animi architecto reprehenderit rerum nisi dolor consequatur atque expedita magnam delectus odit unde deleniti quod ea sequi, rem numquam aut nulla explicabo? Quisquam, deleniti. Animi eligendi blanditiis temporibus optio.</p>
           </div>
 
+          <div>
+          <h1>Mes supers Photos</h1>
+          <figure>
+            <img src="https://placehold.co/400x200?text=paysage" alt="">
+
+            <img src="https://placehold.co/400x200?text=portrait" alt="">
+          </figure>
+          </div>
+
           <script>
         /* var button = 10
         fonctuion button (){}*/
 
-        let button = document.queryselectorAll("button");
-        let div = document.queryselectorAll("div") ;
+        let button = document.querySelectorAll("button");
+        let div = document.querySelectorAll("div") ;
 
-        for(let i = 1 ; i < div.lenght; i = i + 1 ){
+        for(let i = 1 ; i < div.length; i = i + 1 ){
             div[i].style ["display"] = "none " ; 
 
         }
         
         function systeme_onglet (e){
 
-        }
-        
-            let index = e.targetdataset.index ;
+            let index = e.target.dataset.index ;
             for (let i = 0 ; i < div.length ; i = i + 1)
                 if(index==i){
                     div[i].style ["display"] = "block";
@@ -40,10 +47,14 @@
 
             }
 
+        }
 
         }
 
+        for( let i = 0 ; i < button.length; i = i + 1 ){
 
+            button[i].addEventListener("click" , systeme_onglet)
+        }
 
 
           </script>

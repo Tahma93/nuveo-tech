@@ -1,0 +1,30 @@
+#git 
+- logiciel qui permet de versionner ton code 
+- garder plusieurs versions de ton code=>plusieurs photos de ton code au fur et à mesure
+
+
+- installer git sur ton ordinateur 
+- git --version
+- git --global
+- git config --list
+- 
+- #permet de creer un repository local 
+- git init
+- 
+- #permet de valider une liste de ficher avant enregistrement dans le repository 
+- git add 
+- 
+- #action d'enregistrer les fichiers validés 
+- git commit -m "mise en ligne" 
+- 
+- creer un repository sur github
+- 
+- #creer une liason entre le dépôt local et le depôt distant 
+-git remote add origin https://github.com/Tahma93/nuveo-tech.git
+
+#donner le nom main a la branch principale du projet
+git branch -M main
+
+#push prendre le repository local => vers le depôt distant
+git push -u origin main
+#validation par Navigateur
