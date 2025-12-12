@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function traitement (){
+            let a = 10;
+            let b = 12 ; 
+            console.log(a +b );
+
+        }
+        
+        function traitement (){
+            
+            let a = 15;
+            let b = 33 ; 
+            console.log (a + b );
+
+            }
+
+        //paramètre de fonction 
+
+        function traitement4 (a,b){
+            
+            // sont des paramètres de la fonction
+            // variable vides
+            console.log(a+b);
+            }
+
+            traitement4(22.44); // au moment de l'exécution a = 22 et b = 44 
+            traitement4( 5.13) // a = 5 et b = 13 
+
+            
+            // le return 
+
+            function calcul(chiffre1, chiffre2){
+
+                let resultat = chiffre1 / chiffre2 ;
+                console.log(resultat);
+
+                    // les variables qui sont creer dans les fonctions ont des portées elles sont locale 
+
+
+                             //exemple :
+                            resultat + 10; // ERREUR 
+                            // pour acceder a la varibale qui est dans la fonction on utilise le mot clé 
+                            // return = resultat 
+                            return resultat ; // mot clé qui permet de recuperer la valeur stockée
+                            // dans la valeur résultats 
+                }
+                          
+        let r = calcul(30.,80);
+        
+        console.log(r);
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

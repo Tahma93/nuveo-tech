@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-index="0">Mon CV</button>
+    <button data-index="1">Mes Photos</button>
+
+    <div>
+        <h1>lorem , ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere vitae sint animi architecto reprehenderit rerum nisi dolor consequatur atque expedita magnam delectus odit unde deleniti quod ea sequi, rem numquam aut nulla explicabo? Quisquam, deleniti. Animi eligendi blanditiis temporibus optio.</p>
+          </div>
+
+          <script>
+        /* var button = 10
+        fonctuion button (){}*/
+
+        let button = document.queryselectorAll("button");
+        let div = document.queryselectorAll("div") ;
+
+        for(let i = 1 ; i < div.lenght; i = i + 1 ){
+            div[i].style ["display"] = "none " ; 
+
+        }
+        
+        function systeme_onglet (e){
+
+        }
+        
+            let index = e.targetdataset.index ;
+            for (let i = 0 ; i < div.length ; i = i + 1)
+                if(index==i){
+                    div[i].style ["display"] = "block";
+                }else{
+                    div[i].style ["display"] = "none" ;
+                { div[i].style["display"] = "none" ; 
+
+            }
+
+
+        }
+
+
+
+
+          </script>
+</body>
+</html>

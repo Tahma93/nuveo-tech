@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // objet et méthode
+
+
+        let voiture = {
+
+                marque : "renault",    // proprieté de l'objet 
+                prix : 4000 , 
+                controle_technique : true , 
+
+            rouler : function (){       //methode de l'objet 
+                                        //(proprieté qui stocke une fonction )
+                console.log("le vehicule roule"); 
+
+            }
+        }
+            voiture.rouler(); // exécuter la methode
+
+            let carre = { 
+                cote : 5 , 
+                surface : function (){
+                    let resultat = this.cote * this.cote ;
+                    console.log(resultat); 
+
+                },
+
+                perimetre : function (){
+                    let resultat = this.cote * 4 ;
+                    console.log(resultat);
+
+                    // la fonction est créer pour l'executer
+
+                }
+            }
+
+            carre.surface();
+            carre.perimetre();
+
+
+    </script>
+</body>
+</html>

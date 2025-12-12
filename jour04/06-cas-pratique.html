@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+    <button data-index = "0" >PALMARES</button>
+    <button data-index = "1">MATCH</button>
+    <button data-index = "2">VICTOIRES</button>
+    <button data-index = "3">DEFAITES</button>
+
+
+    <button>Mon CV</button>
+    <button>Mes photos</button>
+
+    <div>"
+        <h1>je suis Polyvalent et je peux tout faire</h1>
+        <p> mon inspiration c'est lebron James </p>
+    </div>
+   
+    <div>
+<img src="https://tse3.mm.bing.net/th/id/OIP.iQTDkN2HAOxcaJO2SAetGwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+<img src="https://tse1.mm.bing.net/th/id/OIP.ECbgVAyVIBa6MxRIenUDbgHaNK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    </div>
+
+    <script>
+        
+        let button = document.querySelectorAll ("button"); 
+        let div = document.querySelectorAll("div");
+        let img = document.querySelectorAll("img") ; 
+
+        for(i=0 ; i < div.length ; i = i+1){
+            div [i].style["display"] = "none";
+
+        }
+
+        function animation (e){
+
+            let index = e.target.dataset.index ;
+            console.log(index);
+
+            for (let i = 0 ; i < div.length ; i = i + 1){
+                if(index==i){
+                    div[i].style ["display"] = "block";
+                }else{
+                    div[i].style ["display"] = "none" ; 
+
+                }
+
+            }
+        }
+            for(let i = 0; i<button.length ; i = i + 1){
+                button[i].addEventListener("click"), img
+                button[i].addEventListener("click"), animation
+
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
